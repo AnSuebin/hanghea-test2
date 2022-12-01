@@ -26,11 +26,14 @@ function App() {
           <input
             type="text"
             id="context"
+            className="context"
             placeholder="할일을 적어보세요"
             onChange={(e) => setContext(e.target.value)}
             value={context || ""}
           ></input>
-          <button onClick={addList}>추가하기</button>
+          <button className="button" onClick={addList}>
+            추가하기
+          </button>
         </form>
         <h2>TodoList</h2>
         <div className="todo-container">
