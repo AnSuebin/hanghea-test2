@@ -5,10 +5,27 @@
   text-align: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+.app-container {
   justify-content: center;
+  align-items: center;
+}
+
+.context {
+  width: 200px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: rgb(218, 218, 255);
+  border-radius: 5px;
+}
+
+.button {
+  background-color: blueviolet;
+  color: white;
+  width: 80px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
 }
 
 .todo-container {
@@ -19,8 +36,10 @@
 
 .todo {
   width: 200px;
-
   padding: 20px;
   border-radius: 5px;
-  border: 1px solid;
+  border: 1px solid blueviolet;
+  color: rgb(91, 91, 91);
+  word-break: break-all;
+  font-weight: 600;
 }
