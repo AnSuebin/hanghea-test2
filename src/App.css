@@ -1,0 +1,26 @@
+.App {
+  min-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(240px));
+  gap: 20px;
+}
+
+.todo {
+  width: 200px;
+
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid;
+}
