@@ -8,11 +8,15 @@ function App() {
 
   const addList = (e) => {
     e.preventDefault();
-    let todo = { key: key, context: context };
-    setTodoList([...todoList, todo]);
-    console.log(todoList);
-    setContext("");
-    setKey(key + 1);
+    if (context !== "") {
+      let todo = { key: key, context: context };
+      setTodoList([...todoList, todo]);
+      console.log(todoList);
+      setContext("");
+      setKey(key + 1);
+    } else {
+      alert("값을 입력해주세요!");
+    }
   };
 
   return (
@@ -22,7 +26,7 @@ function App() {
           <input
             type="text"
             id="context"
-            placeholder="할일을 적어보세요!"
+            placeholder="할일을 적어보세요"
             onChange={(e) => setContext(e.target.value)}
             value={context || ""}
           ></input>
